@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summit Air HVAC | Heating & Cooling Experts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0f172a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
+                url('images/hvac-hero.jpg') center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: #1e40af;
+    padding: 16px 36px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 20px;
+    background: #111827;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stats h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* SERVICES */
+.services {
+    background: white;
+    color: #1f2937;
+    padding: 100px 60px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: #f3f4f6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-card div {
+    padding: 25px;
+}
+
+/* WHY */
+.why {
+    padding: 100px 60px;
+    background: #0f172a;
+    text-align: center;
+}
+
+.why h2 {
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.why-box {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background: #1e40af; /* darker blue background */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0f172a;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 0 20px;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .services,
+    .why {
+        padding: 80px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><strong>Summit Air HVAC</strong></div>
+    <div>
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Reliable HVAC Service Built for Arizona</h1>
+        <p>Professional heating & cooling solutions with fast response times and trusted technicians.</p>
+        <a href="#contact" class="button">Schedule Service</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div>
+        <h2>10+</h2>
+        <p>Years Experience</p>
+    </div>
+    <div>
+        <h2>5,000+</h2>
+        <p>Repairs Completed</p>
+    </div>
+    <div>
+        <h2>24/7</h2>
+        <p>Emergency Service</p>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+
+        <div class="service-card">
+            <img src="images/ac-repair.jpg" alt="AC Repair">
+            <div>
+                <h3>AC Repair</h3>
+                <p>Fast diagnostics and reliable repairs to keep your home cool during extreme heat.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="images/heating-install.jpg" alt="Heating Installation">
+            <div>
+                <h3>Heating Installation</h3>
+                <p>Energy-efficient system installations designed for long-term performance.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <img src="images/maintenance.jpg" alt="Maintenance Plans">
+            <div>
+                <h3>Maintenance Plans</h3>
+                <p>Prevent breakdowns and extend system lifespan with routine professional service.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="why" id="why">
+    <h2>Why Choose Summit Air?</h2>
+    <div class="why-grid">
+        <div class="why-box">
+            <h3>Licensed & Insured</h3>
+            <p>Certified professionals ensuring safe and compliant service.</p>
+        </div>
+        <div class="why-box">
+            <h3>Transparent Pricing</h3>
+            <p>No hidden fees — clear quotes before work begins.</p>
+        </div>
+        <div class="why-box">
+            <h3>Local & Trusted</h3>
+            <p>Proudly serving Phoenix with dependable service and honest communication.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Need Service Today?</h2>
+    <p>Call (480) 555-1234 or email service@summitairhvac.com</p>
+    <a href="tel:4805551234" class="button">Call Now</a>
+</section>
+
+<footer>
+    © 2026 Summit Air HVAC | Serving Phoenix, AZ
+</footer>
+
+</body>
+</html>
